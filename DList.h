@@ -24,6 +24,13 @@ public:
         }
         head = nullptr;
     }
+    
+    bool prazna(){
+        if(head == nullptr)
+            return true;
+        return false;
+    }
+
 
     void ubaciNaPocetak(int value, int key){
         Node* pom = new Node(value, key);
